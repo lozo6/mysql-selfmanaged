@@ -3,10 +3,10 @@ import sqlalchemy as create_engine
 import requests as rq
 
 # please note that each variable would be different for each mysql database and user
-MYSQL_HOSTNAME = ''
+MYSQL_HOSTNAME = 'lozoWeek6'
 MYSQL_DATABASE = 'opiodTreatments'
 MYSQL_USER = ''
-MYSQL_PASSWORD = ''
+MYSQL_PASSWORD = 'lozoAHI2023!'
 
 connection_string = f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}'
 engine = create_engine(connection_string)

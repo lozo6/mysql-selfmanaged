@@ -21,3 +21,5 @@ An example dataset that you have found (selected) to insert into the mysql datab
 ## How to set up VM with MySQL
 
 I will be using Microsoft Azure for this tutorial, but you can also Google Cloud Platform or Amazon Web Services (AWS)
+
+Create a Virtual Machine (VM) with minimum requirements for installing MySQL in Linux environment (Ubuntu)
