@@ -23,7 +23,8 @@ An example dataset that you have found (selected) to insert into the mysql datab
 I will be using Microsoft Azure for this tutorial, but you can also Google Cloud Platform or Amazon Web Services (AWS)
 
 Create a Virtual Machine (VM) with minimum requirements for installing MySQL in Linux environment (Ubuntu)
-1. Use sudo apt-get update # to install all dependencies in Ubuntu OS
+
+1. Use sudo apt-get update and sudo apt install python3-pip # to install all dependencies in Ubuntu OS
 
 2. Use sudo apt install mysql-server mysql-client # to install MySQL in Ubuntu OS
 
