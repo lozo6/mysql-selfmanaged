@@ -11,9 +11,9 @@ MYSQL_DATABASE = 'opiodTreatments'
 # MYSQL_USER = 'lozoWeek6'
 # MYSQL_PASSWORD = 'lozoAHI2023!'
 
-connect = f'mysql+pymysql://{config["MYSQL_USER"]}:{config["MYSQL_PASSWORD"]}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}' ## we can string together all the components to form the connection string
+connect = f'mysql+pymysql://{config["MYSQL_USER"]}:{config["MYSQL_PASSWORD"]}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}'
 
-engine = create_engine(connect) ## create_engine allows us to link the database via mysql
+engine = create_engine(connect)
 
 print(engine.table_names())
 
