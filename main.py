@@ -3,9 +3,9 @@ import sqlalchemy as create_engine
 import requests as rq
 
 # please note that each variable would be different for each mysql database and user
-MYSQL_HOSTNAME = 'lozoWeek6'
+MYSQL_HOSTNAME = '20.169.16.174'
 MYSQL_DATABASE = 'opiodTreatments'
-MYSQL_USER = ''
+MYSQL_USER = 'lozoWeek6'
 MYSQL_PASSWORD = 'lozoAHI2023!'
 
 connect= f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}'

@@ -23,3 +23,18 @@ An example dataset that you have found (selected) to insert into the mysql datab
 I will be using Microsoft Azure for this tutorial, but you can also Google Cloud Platform or Amazon Web Services (AWS)
 
 Create a Virtual Machine (VM) with minimum requirements for installing MySQL in Linux environment (Ubuntu)
+1. Use sudo apt-get update # to install all dependencies in Ubuntu OS
+
+2. Use sudo apt install mysql-server mysql-client # to install MySQL in Ubuntu OS
+
+3. Use sudo mysql # to login using administrative privileges
+
+4. To add administrative users to Virtual Machine: CREATE USER 'lozo'@'%' IDENTIFIED BY 'lozoAHI2023!';
+
+    select user from mysql.user # pulls up the list of users to verify the user was created sucessfully
+
+    GRANT ALL PRIVILEGES ON . TO 'dba'@;%; WITH GRANT OPTION; # give the user you just created privileges to everything
+
+    show grants for dba; # shows what grant privileges were given to the user to confirm it was done correctly
+
+    so now you can test the connection by logging in as '$ mysql -u dba -p' and enter the password: ahi2022 and now you can connect in
