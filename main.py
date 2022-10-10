@@ -8,8 +8,8 @@ MYSQL_DATABASE = 'opiodTreatments'
 MYSQL_USER = ''
 MYSQL_PASSWORD = 'lozoAHI2023!'
 
-connection_string = f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}'
-engine = create_engine(connection_string)
+connect= f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}'
+engine = create_engine(connect)
 
 print(engine.table_names())
 
