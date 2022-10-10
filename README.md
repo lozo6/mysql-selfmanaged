@@ -36,3 +36,9 @@ Create a Virtual Machine (VM) with minimum requirements for installing MySQL in 
     GRANT ALL PRIVILEGES ON *.* TO 'lozo'@'%'; # grants all admin privileges to user
 
     To test use '$ mysql -u lozo -p' and enter the password: lozoAHI2023!
+
+5. Please Add Inbound Port Rule to allow port '3306' to connect to help MySQL server
+
+6. Use sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf and change 'bind_address' from 127.0.0.1 to 0.0.0.0
+
+7. Please refer to main.py for adding data into MySQL

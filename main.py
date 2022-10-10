@@ -20,4 +20,4 @@ api.to_csv('data/opiodTreatments.csv')
 
 
 df = pd.read_csv('data/opiodTreatments.csv')
-df.to_sql('opiodData', con=engine, if_exists='append')
+df.to_sql('opiodTreatments', con=engine, if_exists='append')
