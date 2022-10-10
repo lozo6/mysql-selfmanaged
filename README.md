@@ -31,10 +31,8 @@ Create a Virtual Machine (VM) with minimum requirements for installing MySQL in 
 
 4. To add administrative users to Virtual Machine: CREATE USER 'lozo'@'%' IDENTIFIED BY 'lozoAHI2023!';
 
-    select user from mysql.user # pulls up the list of users to verify the user was created sucessfully
+    SELECT user FROM mysql.user; # shows a list of all users in Ubuntu OS
 
-    GRANT ALL PRIVILEGES ON . TO 'dba'@;%; WITH GRANT OPTION; # give the user you just created privileges to everything
+    GRANT ALL PRIVILEGES ON *.* TO 'lozo'@'%'; # grants all admin privileges to user
 
-    show grants for dba; # shows what grant privileges were given to the user to confirm it was done correctly
-
-    so now you can test the connection by logging in as '$ mysql -u dba -p' and enter the password: ahi2022 and now you can connect in
+    To test use '$ mysql -u lozo -p' and enter the password: lozoAHI2023!
